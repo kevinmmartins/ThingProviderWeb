@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './css/pure-min.css';
 import './css/side-menu.css';
+import './css/app.css';
+import linkedinLogo from './images/linkedin.png';
+import githubLogo from './images/github.png';
 
 class App extends Component {
   render() {
@@ -11,22 +14,23 @@ class App extends Component {
         </a>
         <div id="menu">
           <div className="pure-menu">
-            <a className="pure-menu-heading" href="#">Company</a>
+            <a className="pure-menu-heading" href="https://github.com/kevinmmartins/ThingProvider">ThingProvider</a>
 
             <ul className="pure-menu-list">
               <li className="pure-menu-item">
-                <a href="#" className="pure-menu-link">Home</a>
-              </li>
-              <li className="pure-menu-item">
-                <a href="#" className="pure-menu-link">About</a>
-              </li>
-
-              <li className="pure-menu-item menu-item-divided pure-menu-selected">
-                <a href="#" className="pure-menu-link">Services</a>
+                <a className="pure-menu-link">Home</a>
               </li>
 
               <li className="pure-menu-item">
-                <a href="#" className="pure-menu-link">Contact</a>
+                <a className="pure-menu-link">Serviços</a>
+              </li>
+
+              <li className="pure-menu-item">
+                <a className="pure-menu-link">Colaboradores</a>
+              </li>
+
+              <li className="pure-menu-item">
+                <a className="pure-menu-link">Contato</a>
               </li>
             </ul>
           </div>
@@ -34,49 +38,44 @@ class App extends Component {
 
         <div id="main">
           <div className="header">
-            <h1>Page Title</h1>
-            <h2>A subtitle for your page goes here</h2>
+            <h1>ThingProvider</h1>
+            <h2>Let's connect all things !</h2>
           </div>
 
           <div className="content">
-            <h2 className="content-subhead">How to use this layout</h2>
+            <h2 className="content-subhead">Sobre o projeto</h2>
             <p>
-              To use this layout, you can just copy paste the HTML, along with the CSS in
-                  <a href="/css/layouts/side-menu.css" alt="Side Menu CSS">side-menu.css</a>, and the JavaScript in
-                  <a href="/js/ui.js">ui.js</a>. The JS file uses vanilla JavaScript to simply toggle an
-                  <code>active</code> className that makes the menu responsive.
-              </p>
+              Este trabalho apresenta um modelo para aplicação de serviços na arquitetura da IOT visando ambientes
+              locais onde o compartilhamento de informações entre diversos sistemas se mostre necessário.
+              Para propor uma arquitetura diferente da comum monolítica aplicada comumente em projetos
+              de menores escalas será utilizado web services restfull proporcionando a possibilidade
+              do consumo das informações para os mais diversos sistemas em que está se mostre necessária
+            </p>
 
-            <h2 className="content-subhead">Now Let's Speak Some Latin</h2>
+            <h2 className="content-subhead">Vamos construir o ThingProvider juntos !</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-              sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-
+              Todo o projeto é open-source ! Venha aprender conosco.
+            </p>
+            <div>
+              <ul>
+                <li className="App-ul">
+                  <a href="https://www.linkedin.com/in/kevinmmartins/">
+                    <img src={linkedinLogo} className="App-logo" alt="Linkedin" />
+                  </a>
+                </li>
+                <li className="App-ul">
+                  <a href="https://github.com/kevinmmartins/ThingProvider">
+                    <img src={githubLogo} className="App-logo" alt="Github" />
+                  </a>
+                </li>
+              </ul>
+            </div>
             <div className="pure-g">
-              <div className="pure-u-1-4">
-                <img className="pure-img-responsive" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake"></img>
-              </div>
-              <div className="pure-u-1-4">
-                <img className="pure-img-responsive" src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train"></img>
-              </div>
-              <div className="pure-u-1-4">
-                <img className="pure-img-responsive" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg" alt="T-Shirt Store"></img>
-              </div>
-              <div className="pure-u-1-4">
-                <img className="pure-img-responsive" src="http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg" alt="Mountain"></img>
+              <div className="pure-u-1-1">
+                <img className="pure-img-responsive" src="https://user-images.githubusercontent.com/20428703/38177975-3c21b5d4-35df-11e8-8193-aff06af8f356.png" alt="ThingProvider logo"></img>
               </div>
             </div>
 
-            <h2 className="content-subhead">Try Resizing your Browser</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-              sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
           </div>
         </div>
       </div>
