@@ -6,3 +6,7 @@
  .App-ul {
     list-style: none;
   }
+
+.App-menu-item{
+  height: 20px;	
+}

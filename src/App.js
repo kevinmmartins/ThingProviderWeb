@@ -6,6 +6,16 @@ import linkedinLogo from './images/linkedin.png';
 import githubLogo from './images/github.png';
 
 class App extends Component {
+
+  constructor() {
+    super();
+    this.state = {
+      servicesList: [{ serviceName: 'Rain Node', status: 'Online' },
+      { serviceName: 'Led Node', status: 'Offline' },
+      { serviceName: 'Led Control', status: 'Online' }]
+    }
+  }
+
   render() {
     return (
       <div id="layout">
@@ -14,7 +24,7 @@ class App extends Component {
         </a>
         <div id="menu">
           <div className="pure-menu">
-            <a className="pure-menu-heading" href="https://github.com/kevinmmartins/ThingProvider">ThingProvider</a>
+            <a className="pure-menu-heading">ThingProvider</a>
 
             <ul className="pure-menu-list">
               <li className="pure-menu-item">
@@ -32,6 +42,13 @@ class App extends Component {
               <li className="pure-menu-item">
                 <a className="pure-menu-link">Contato</a>
               </li>
+
+              <li className="pure-menu-item">
+                <a href="https://github.com/kevinmmartins/ThingProvider">
+                  <img src={githubLogo} className="App-menu-item" alt="Github" />
+                </a>
+              </li>
+
             </ul>
           </div>
         </div>
@@ -56,6 +73,7 @@ class App extends Component {
             <p>
               Todo o projeto é open-source ! Venha aprender conosco.
             </p>
+
             <div>
               <ul>
                 <li className="App-ul">
@@ -70,12 +88,35 @@ class App extends Component {
                 </li>
               </ul>
             </div>
+
+            <h2 className="content-subhead">Serviços disponíveis</h2>
+            <table className="pure-table">
+              <thead>
+                <tr>
+                  <th>Nome do serviço</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                {
+                  this.state.servicesList.map(function (service) {
+                    return (
+                      <tr>
+                        <td>{service.serviceName}</td>
+                        <td>{service.status}</td>
+                      </tr>
+                    );
+                  })
+                }
+              </tbody>
+            </table>
+            <br />
+
             <div className="pure-g">
               <div className="pure-u-1-1">
                 <img className="pure-img-responsive" src="https://user-images.githubusercontent.com/20428703/38177975-3c21b5d4-35df-11e8-8193-aff06af8f356.png" alt="ThingProvider logo"></img>
               </div>
             </div>
-
           </div>
         </div>
       </div>
