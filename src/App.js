@@ -7,15 +7,6 @@ import githubLogo from './images/github.png';
 
 class App extends Component {
 
-  constructor() {
-    super();
-    this.state = {
-      servicesList: [{ serviceName: 'Rain Node', status: 'Online' },
-      { serviceName: 'Led Node', status: 'Offline' },
-      { serviceName: 'Led Control', status: 'Online' }]
-    }
-  }
-
   render() {
     return (
       <div id="layout">
@@ -37,10 +28,6 @@ class App extends Component {
 
               <li className="pure-menu-item">
                 <a className="pure-menu-link">Colaboradores</a>
-              </li>
-
-              <li className="pure-menu-item">
-                <a className="pure-menu-link">Contato</a>
               </li>
 
               <li className="pure-menu-item">
@@ -69,6 +56,12 @@ class App extends Component {
               do consumo das informações para os mais diversos sistemas em que está se mostre necessária
             </p>
 
+            <div className="pure-g">
+              <div className="pure-u-1-1">
+                <img className="pure-img-responsive" src="https://user-images.githubusercontent.com/20428703/38177975-3c21b5d4-35df-11e8-8193-aff06af8f356.png" alt="ThingProvider logo"></img>
+              </div>
+            </div>
+
             <h2 className="content-subhead">Vamos construir o ThingProvider juntos !</h2>
             <p>
               Todo o projeto é open-source ! Venha aprender conosco.
@@ -87,35 +80,6 @@ class App extends Component {
                   </a>
                 </li>
               </ul>
-            </div>
-
-            <h2 className="content-subhead">Serviços disponíveis</h2>
-            <table className="pure-table">
-              <thead>
-                <tr>
-                  <th>Nome do serviço</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                {
-                  this.state.servicesList.map(function (service) {
-                    return (
-                      <tr>
-                        <td>{service.serviceName}</td>
-                        <td>{service.status}</td>
-                      </tr>
-                    );
-                  })
-                }
-              </tbody>
-            </table>
-            <br />
-
-            <div className="pure-g">
-              <div className="pure-u-1-1">
-                <img className="pure-img-responsive" src="https://user-images.githubusercontent.com/20428703/38177975-3c21b5d4-35df-11e8-8193-aff06af8f356.png" alt="ThingProvider logo"></img>
-              </div>
             </div>
           </div>
         </div>
