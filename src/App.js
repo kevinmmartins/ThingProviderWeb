@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Main from './components/Main';
 import Header from './components/Header';
+import ThingProviderheader from './components/ThingProviderHeader';
 
 class App extends Component {
 
@@ -8,6 +9,7 @@ class App extends Component {
     return (
       <div id="layout">
         <Header />
+        <ThingProviderheader />
         <Main />
       </div>
     );

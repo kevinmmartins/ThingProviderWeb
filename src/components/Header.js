@@ -10,7 +10,6 @@ class Header extends Component {
         return (
             <div>
                 <a href="#menu" id="menuLink" className="menu-link">
-                    <span></span>
                 </a>
                 <div id="menu">
                     <div className="pure-menu">
@@ -29,6 +28,9 @@ class Header extends Component {
                                 <Link className="pure-menu-item" to='/colaborators'>Colaboradores</Link>
                             </li>
 
+                            <li className="pure-menu-item">
+                                <Link className="pure-menu-item" to='/open'>Repositório</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
