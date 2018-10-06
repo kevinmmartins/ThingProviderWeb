@@ -1,0 +1,14 @@
+version: '3'
+services:
+  portal-frontend:
+    image: node
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app
+    command: bash -c "npm install && npm start"
+    ports:
+      - "3000:3000"
+networks:
+  default:
+    external:
+      name: thing-provider-local-network
