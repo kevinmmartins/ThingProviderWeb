@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../css/pure-min.css';
 import Request from '../util/Request';
 import Moment from 'react-moment';
-import Endpoints from './Endpoints';
 
 class Services extends Component {
 
@@ -77,7 +76,6 @@ class Services extends Component {
             {serviceList}
           </tbody>
         </table>
-        <Endpoints endpoints={this.state.services} />
       </div>
     );
   }
