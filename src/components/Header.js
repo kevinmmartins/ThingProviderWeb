@@ -13,8 +13,7 @@ class Header extends Component {
                 </a>
                 <div id="menu">
                     <div className="pure-menu">
-                        <a className="pure-menu-heading">ThingProvider</a>
-
+                        <h2 className="pure-menu-heading">ThingProvider</h2>
                         <ul className="pure-menu-list">
                             <li className="pure-menu-item">
                                 <Link className="pure-menu-item" to='/'>Home</Link>
